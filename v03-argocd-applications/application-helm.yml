@@ -15,6 +15,6 @@ spec:
           #          value: "3"
           #      valueFiles:
           #        - custom-values.yaml
-    path: v03-argocd-applications/helm/nginx
-    repoURL: https://github.com/devopshobbies/argocd-tutorial.git
-    targetRevision: main
+    path: v03-argocd-applications/helm/nginx # path to our helm chart, having values.yml file
+    repoURL: https://github.com/devopshobbies/argocd-tutorial.git # our get repository
+    targetRevision: main # tells our branch
