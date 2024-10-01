@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: application-from-scratch
+  name: application-from-scratch # this name is shown to argo application in ui
 spec:
   destination:
     namespace: default
