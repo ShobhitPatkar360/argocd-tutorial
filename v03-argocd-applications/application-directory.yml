@@ -5,13 +5,13 @@ metadata:
 spec:
   destination:
     namespace: directory
-    server: https://kubernetes.default.svc
-  project: default
+    server: https://kubernetes.default.svc # hum list of argocd cluster nikalte hai, then usse server address copy karte hai
+  project: default # ek project mei multiple applications hote hai
   source:
           #    directory:
           #      exclude: 'service.yml'
           #      include: '{serviceaccount.yml,service.yml}'
           #      recurse: true
-    path: v03-argocd-applications/directoryOfmanifests
-    repoURL: https://github.com/devopshobbies/argocd-tutorial.git
-    targetRevision: main
+    path: v03-argocd-applications/directoryOfmanifests  
+    repoURL: https://github.com/devopshobbies/argocd-tutorial.git # imse git repo ki url dete hai, jisme arogcd ka code hota hai
+    targetRevision: main # this is repo branch name
