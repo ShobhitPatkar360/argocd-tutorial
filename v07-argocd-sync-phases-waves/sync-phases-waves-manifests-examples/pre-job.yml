@@ -12,6 +12,6 @@ spec:
         - name: health-check
           image: curlimages/curl
           command: ["/bin/sh", "-c"]
-          args: ["if curl -s http://10.101.16.134:80 | grep -qi 'running'; then echo 'Your Application is up and Running'; exit 0; else echo 'Your Application is NOT accessible'; exit 1; fi"]
+          args: ["if curl -s http://0.0.0.0:80 | grep -qi 'running'; then echo 'Flask Application is up and Running'; exit 0; else echo 'Flask Application is NOT accessible'; exit 1; fi"]
       restartPolicy: Never
   backoffLimit: 0
